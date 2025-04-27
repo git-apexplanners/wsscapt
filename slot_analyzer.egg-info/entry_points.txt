@@ -1,0 +1,2 @@
+[console_scripts]
+slot-analyzer = slot_analyzer.cli:main

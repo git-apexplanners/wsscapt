@@ -1,0 +1,29 @@
+# Core Dependencies
+python-dotenv>=1.0.0  # Configuration management
+pyyaml>=6.0.1        # YAML configuration support
+structlog>=23.1.0    # Structured logging
+loguru>=0.7.0        # Enhanced logging capabilities
+pydantic>=2.4.2      # Data validation and settings management
+kombu>=5.3.1         # Message queue abstraction
+redis>=5.0.0         # Message broker backend
+aioredis>=2.0.1      # Async Redis client
+click>=8.1.3         # Command-line interface toolkit
+
+# Network Capture Dependencies
+mitmproxy>=10.1.1    # HTTP/HTTPS traffic interception
+websockets>=12.0     # WebSocket support
+pyOpenSSL>=23.0.0    # SSL/TLS handling
+cryptography>=41.0.0 # Certificate management
+
+# Screenshot and Monitoring
+pyautogui>=0.9.54    # Screenshot capture
+pillow>=10.0.0       # Image processing
+opencv-python>=4.8.0 # Computer vision and image processing
+numpy>=1.24.0       # Scientific computing and array operations
+
+# Symbol Recognition
+scikit-image>=0.21.0 # Additional image processing utilities
+
+# Pattern Analysis
+pandas>=2.0.0      # Data analysis and manipulation
+scipy>=1.10.0      # Statistical functions and algorithms
