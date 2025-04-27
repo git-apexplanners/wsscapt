@@ -3,6 +3,7 @@ Services layer for the slot analyzer application.
 Provides access to core functionality modules.
 """
 
+from .health import health_service
 from .capture import (
     SlotGameCapture,
     ProxyManager,
@@ -12,5 +13,18 @@ from .capture import (
 __all__ = [
     'SlotGameCapture',
     'ProxyManager',
-    'ScreenshotManager'
+    'ScreenshotManager',
+    'ServiceRegistry',
+    'health_service'
 ]
+
+
+class ServiceRegistry:
+    def __init__(self):
+        self.services = {}
+
+    def register(self, name, service):
+        self.services[name] = service
+
+    def get(self, name):
+        return self.services.get(name)
