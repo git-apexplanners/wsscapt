@@ -8,6 +8,7 @@ import ssl
 from datetime import datetime
 
 from mitmproxy import ctx, options
+from .options import Options
 from mitmproxy.tools import dump
 from mitmproxy import proxy
 from OpenSSL import crypto

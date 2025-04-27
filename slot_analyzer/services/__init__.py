@@ -3,7 +3,7 @@ Services layer for the slot analyzer application.
 Provides access to core functionality modules.
 """
 
-from .health import health_service
+from .health import health_service  # Explicit import from health.py module
 from .capture import (
     SlotGameCapture,
     ProxyManager,

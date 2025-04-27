@@ -11,8 +11,8 @@ import pyautogui
 from loguru import logger
 from PIL import Image
 
-from ...errors import CaptureError
-from ...config import settings
+from slot_analyzer.errors import CaptureError
+from slot_analyzer.config import settings
 
 class ScreenshotManager:
     """Manages screenshot captures with throttling"""

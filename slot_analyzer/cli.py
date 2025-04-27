@@ -2,6 +2,7 @@
 
 import sys
 import signal
+import time
 import click
 from typing import Optional
 
@@ -28,6 +29,21 @@ def handle_shutdown(signal_num: int, frame: Optional[object]) -> None:
     except Exception as e:
         logger.error("Error during shutdown", error=str(e))
         sys.exit(1)
+
+    while True:
+        time.sleep(1)
+
+    while True:
+        time.sleep(1)
+
+    while True:
+        time.sleep(1)
+
+    while True:
+        time.sleep(1)
+
+    while True:
+        time.sleep(1)
 
 # Register shutdown handlers
 signal.signal(signal.SIGINT, handle_shutdown)
@@ -79,7 +95,7 @@ def start(debug: bool) -> None:
             
         # Main application loop
         while True:
-            signal.pause()
+            time.sleep(1)
             
     except Exception as e:
         click.echo(click.style(f"Error: {str(e)}", fg="red"))

@@ -9,10 +9,10 @@ from pathlib import Path
 from loguru import logger
 from pydantic import BaseModel
 
-from .proxy import ProxyManager
-from .screenshot import ScreenshotManager
-from ...errors import CaptureError
-from ...message_broker import MessageQueue
+from slot_analyzer.services.capture.proxy import ProxyManager
+from slot_analyzer.services.capture.screenshot import ScreenshotManager
+from slot_analyzer.errors import CaptureError
+from slot_analyzer.message_broker import MessageQueue
 
 class SessionInfo(BaseModel):
     """Validates and stores session information"""
