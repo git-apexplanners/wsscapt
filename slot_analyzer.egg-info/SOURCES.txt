@@ -2,6 +2,7 @@ README.md
 setup.py
 slot_analyzer/__init__.py
 slot_analyzer/cli.py
+slot_analyzer/ui_launcher.py
 slot_analyzer.egg-info/PKG-INFO
 slot_analyzer.egg-info/SOURCES.txt
 slot_analyzer.egg-info/dependency_links.txt
@@ -11,11 +12,13 @@ slot_analyzer.egg-info/top_level.txt
 slot_analyzer/config/__init__.py
 slot_analyzer/config/layouts.py
 slot_analyzer/errors/__init__.py
-slot_analyzer/logging/__init__.py
-slot_analyzer/queue/__init__.py
+slot_analyzer/log_utils/__init__.py
+slot_analyzer/message_broker/__init__.py
 slot_analyzer/services/__init__.py
+slot_analyzer/services/health.py
 slot_analyzer/services/capture/__init__.py
 slot_analyzer/services/capture/capture.py
+slot_analyzer/services/capture/options.py
 slot_analyzer/services/capture/proxy.py
 slot_analyzer/services/capture/screenshot.py
 slot_analyzer/services/pattern/__init__.py
@@ -24,10 +27,12 @@ slot_analyzer/services/symbol/__init__.py
 slot_analyzer/services/symbol/recognizer.py
 slot_analyzer/ui/__init__.py
 slot_analyzer/ui/main.py
+slot_analyzer/ui/theme.py
 slot_analyzer/ui/components/__init__.py
 slot_analyzer/ui/components/capture_monitor.py
 slot_analyzer/ui/components/config_editor.py
 slot_analyzer/ui/components/data_viewer.py
+slot_analyzer/ui/components/matrix_effect.py
 slot_analyzer/ui/components/pattern_viewer.py
 slot_analyzer/ui/components/session_controls.py
 slot_analyzer/ui/components/session_manager.py

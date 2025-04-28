@@ -18,10 +18,12 @@ setup(
         "redis>=5.0.0",
         "aioredis>=2.0.1",
         "click>=8.1.3",
+        "pillow>=10.0.0",  # For image handling
     ],
     entry_points={
         "console_scripts": [
             "slot-analyzer=slot_analyzer.cli:main",
+            "slot-analyzer-ui=slot_analyzer.ui_launcher:main",
         ],
     },
     python_requires=">=3.8",

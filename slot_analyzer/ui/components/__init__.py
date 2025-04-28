@@ -7,6 +7,7 @@ from .session_controls import SessionControls
 from .data_viewer import DataViewer
 from .session_manager import SessionManager
 from .config_editor import ConfigEditor
+from .matrix_effect import MatrixEffect, MatrixBackground
 
 __all__ = [
     'CaptureMonitor',
@@ -15,5 +16,7 @@ __all__ = [
     'SessionControls',
     'DataViewer',
     'SessionManager',
-    'ConfigEditor'
+    'ConfigEditor',
+    'MatrixEffect',
+    'MatrixBackground'
 ]

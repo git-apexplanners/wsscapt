@@ -46,17 +46,48 @@ pip install -e .
 
 ## Configuration
 
-The application uses environment variables for configuration. Create a `.env` file in the root directory:
+The application uses a hierarchical configuration system with the following precedence:
+1. Environment variables (highest priority)
+2. config.ini file settings
+3. Default values in code (lowest priority)
 
+### Configuration Files
+
+1. `.env` - Environment-specific settings:
 ```env
 # Application Settings
-DEBUG=False
-LOG_LEVEL=INFO
+SLOT_ANALYZER_ENV=development
+SLOT_ANALYZER_DEBUG=true
 
-# Redis Settings
-REDIS_HOST=localhost
-REDIS_PORT=6379
-REDIS_DB=0
+# Capture Service Settings
+SLOT_ANALYZER_CAPTURE_SCREENSHOT_THROTTLE_MS=500
+SLOT_ANALYZER_CAPTURE_PROXY_PORT=8080
+```
+
+2. `config.ini` - General application settings:
+```ini
+[slot_analyzer]
+env = development
+debug = true
+
+[slot_analyzer.capture]
+screenshot_throttle_ms = 500
+proxy_port = 8080
+```
+
+### Configuration Validation
+All configuration values are validated using Pydantic with:
+- Type checking
+- Value range validation
+- Required field enforcement
+- Environment-specific defaults
+
+### Accessing Configuration
+```python
+from slot_analyzer.config.config import get_config
+
+config = get_config()
+print(config.capture.screenshot_throttle_ms)  # Get a setting
 ```
 
 ## Basic Usage

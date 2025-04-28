@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import ttk
 import logging
 from typing import Optional, List, Dict, Any
-from ..services.symbol import SymbolRecognizer
+from slot_analyzer.services.symbol import SymbolRecognizer
 
 logger = logging.getLogger(__name__)
 

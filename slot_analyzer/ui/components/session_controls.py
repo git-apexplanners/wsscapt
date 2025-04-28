@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import logging
 from typing import Optional, Callable
-from ..services.capture import CaptureService
+from slot_analyzer.services.capture import CaptureService
 
 logger = logging.getLogger(__name__)
 

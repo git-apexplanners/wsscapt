@@ -7,4 +7,7 @@ from .capture import SlotGameCapture
 from .proxy import ProxyManager
 from .screenshot import ScreenshotManager
 
-__all__ = ['SlotGameCapture', 'ProxyManager', 'ScreenshotManager']
+# Maintain backward compatibility
+CaptureService = SlotGameCapture
+
+__all__ = ['SlotGameCapture', 'ProxyManager', 'ScreenshotManager', 'CaptureService']

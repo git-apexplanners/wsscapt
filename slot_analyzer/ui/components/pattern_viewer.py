@@ -6,7 +6,7 @@ from tkinter.scrolledtext import ScrolledText
 import json
 import logging
 from typing import Optional, Dict, Any, List
-from ..services.pattern import PatternAnalyzer
+from slot_analyzer.services.pattern import PatternAnalyzer
 
 logger = logging.getLogger(__name__)
 

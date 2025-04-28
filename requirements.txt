@@ -4,6 +4,7 @@ pyyaml>=6.0.1        # YAML configuration support
 structlog>=23.1.0    # Structured logging
 loguru>=0.7.0        # Enhanced logging capabilities
 pydantic>=2.4.2      # Data validation and settings management
+pydantic-settings>=2.0.3  # Configuration management with pydantic
 kombu>=5.3.1         # Message queue abstraction
 redis>=5.0.0         # Message broker backend
 aioredis>=2.0.1      # Async Redis client
